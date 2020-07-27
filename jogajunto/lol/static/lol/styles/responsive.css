@@ -1,0 +1,450 @@
+@media only screen and (max-width:530px)  {
+
+
+  .content-box {
+    display: flex;
+    justify-content: center;
+
+    align-items: center;
+    box-sizing: border-box;
+    height: 250px;
+  }
+
+  .text-box{
+
+    width: 95%;
+
+  }
+    /* Lista jogadores */
+
+  .grid-box {
+
+    display: grid;
+    grid-template-columns: 33% 38% 30%;
+    padding: 10px;
+
+  }
+
+  .grid-items{
+    background-color: #F0F8FF;
+    /* padding: 0px 150px 0px 260px; */
+    font-size: 15px;
+    text-align: center;
+    padding: 30px;
+    }
+
+  .grid-headers{
+    background-color: #F0F8FF;
+    /* padding: 0px 150px 0px 260px; */
+    font-size: 15px;
+    text-align: center;
+    padding: 30px;
+  }
+
+  .grid-items#nick {
+
+    text-align: center;
+    padding: 40px;
+
+  }
+
+  .grid-items#elo {
+
+    text-align: center;
+    padding: 30px;
+
+  }
+
+  .grid-items#modal {
+
+    text-align: center;
+    padding: 40px 50px 50px 50px;
+
+  }
+
+  #header {
+
+    padding: 0 0 0 140px;
+
+  }
+
+  #tier {
+
+    font-size: 0px;
+    float: left;
+
+
+  }
+
+  #rank {
+
+  float: right;
+  padding: 9px 1px 1px 1px;
+
+
+
+  }
+
+  #titulo h1{
+
+    font-size: 22px;
+
+  }
+  #btn {
+
+    display: block;
+    width: 70%;
+    padding: 0 0 0 0;
+
+  }
+
+}
+
+@media only screen and (max-width:700px) and (min-width: 531px)  {
+
+
+  .grid-box {
+
+    display: grid;
+    grid-template-columns: 33% 38% 30%;
+    padding: 10px;
+
+  }
+
+  .grid-items{
+    background-color: #F0F8FF;
+    /* padding: 0px 150px 0px 260px; */
+    font-size: 15px;
+    text-align: center;
+    padding: 30px;
+   }
+
+   .grid-headers{
+    background-color: #F0F8FF;
+    /* padding: 0px 150px 0px 260px; */
+    font-size: 15px;
+    text-align: center;
+    padding: 30px;
+   }
+
+  .grid-items#nick {
+
+    text-align: center;
+    padding: 40px;
+
+  }
+
+  .grid-items#elo {
+
+    text-align: center;
+    padding: 30px;
+
+  }
+
+  .grid-items#modal {
+
+    text-align: center;
+    padding: 40px 50px 50px 50px;
+
+  }
+
+  #header {
+
+    padding: 0 0 0 400px;
+
+  }
+
+  #tier {
+
+    font-size: 0px;
+    float: left;
+
+
+  }
+
+  #rank {
+
+  float: right;
+  padding: 9px 1px 1px 1px;
+
+
+
+  }
+
+  #titulo h1{
+
+    font-size: 22px;
+
+  }
+  #btn {
+
+    display: block;
+    width: 70%;
+    padding: 0 50px 0 0;
+
+  }
+
+
+}
+
+@media only screen and (max-width:1080px) and (min-width: 701px)  {
+
+
+  .grid-box {
+
+    display: grid;
+    grid-template-columns: 33% 38% 30%;
+    padding: 10px;
+
+  }
+
+  .grid-items{
+    background-color: #F0F8FF;
+    /* padding: 0px 150px 0px 260px; */
+    font-size: 15px;
+    text-align: center;
+    padding: 30px;
+   }
+
+  .grid-headers{
+    background-color: #F0F8FF;
+    /* padding: 0px 150px 0px 260px; */
+    font-size: 15px;
+    text-align: center;
+    padding: 30px;
+  }
+
+  .grid-items#nick {
+
+    text-align: center;
+    padding: 40px;
+
+  }
+
+  .grid-items#elo {
+
+    text-align: center;
+    padding: 30px;
+
+  }
+
+  .grid-items#modal {
+
+    text-align: center;
+    padding: 40px 50px 50px 50px;
+
+  }
+
+  #header {
+
+    padding: 0 0 0 600px;
+
+  }
+
+  #tier {
+
+    font-size: 0px;
+    float: left;
+
+
+  }
+
+  #rank {
+
+  float: right;
+  padding: 9px 1px 1px 1px;
+
+
+
+  }
+
+  #titulo h1{
+
+    font-size: 22px;
+
+  }
+  #btn {
+
+    display: block;
+    width: 100%;
+    padding: 0 0 0 0;
+
+  }
+
+
+}
+
+@media only screen and (max-width:1436px) and (min-width: 1081px)  {
+
+
+  .grid-box {
+
+    display: grid;
+    grid-template-columns: 33% 38% 30%;
+    padding: 10px;
+
+  }
+
+  .grid-items{
+    background-color: #F0F8FF;
+    /* padding: 0px 150px 0px 260px; */
+    font-size: 15px;
+    text-align: center;
+    padding: 30px;
+  }
+
+  .grid-headers{
+    background-color: #F0F8FF;
+    /* padding: 0px 150px 0px 260px; */
+    font-size: 15px;
+    text-align: center;
+    padding: 30px;
+  }
+
+
+  .grid-items#nick {
+
+    text-align: center;
+    padding: 40px;
+
+  }
+
+  .grid-items#elo {
+
+    text-align: center;
+    padding: 30px;
+
+  }
+
+  .grid-items#modal {
+
+    text-align: center;
+    padding: 40px 50px 50px 50px;
+
+  }
+
+  #header {
+
+    padding: 0 0 0 1000px;
+
+  }
+
+  #tier {
+
+    font-size: 0px;
+    float: left;
+
+
+  }
+
+  #rank {
+
+  float: right;
+  padding: 9px 1px 1px 1px;
+
+
+
+  }
+
+  #titulo h1{
+
+    font-size: 22px;
+
+  }
+  #btn {
+
+    display: block;
+    width: 100%;
+    padding: 0 0 0 0;
+
+  }
+
+
+}
+
+@media only screen and (max-width:1800px) and (min-width: 1437px)  {
+
+
+  .grid-box {
+
+    display: grid;
+    grid-template-columns: 33% 38% 30%;
+    padding: 10px;
+
+  }
+
+  .grid-items{
+    background-color: #F0F8FF;
+    /* padding: 0px 150px 0px 260px; */
+    font-size: 15px;
+    text-align: center;
+    padding: 30px;
+  }
+
+  .grid-headers{
+    background-color: #F0F8FF;
+    /* padding: 0px 150px 0px 260px; */
+    font-size: 15px;
+    text-align: center;
+    padding: 30px;
+  }
+
+  .grid-items#nick {
+
+    text-align: center;
+    padding: 40px;
+
+  }
+
+  .grid-items#elo {
+
+    text-align: center;
+    padding: 30px;
+
+  }
+
+  .grid-items#modal {
+
+    text-align: center;
+    padding: 40px 50px 50px 50px;
+
+  }
+
+  #header {
+
+    padding: 0 0 0 1200px;
+
+  }
+
+  #tier {
+
+    font-size: 0px;
+    float: left;
+
+
+  }
+
+  #rank {
+
+  float: right;
+  padding: 9px 1px 1px 1px;
+
+
+
+  }
+
+  #titulo h1{
+
+    font-size: 22px;
+
+  }
+  #btn {
+
+    display: block;
+    width: 100%;
+    padding: 0 0 0 0;
+
+  }
+
+
+}

@@ -1,0 +1,145 @@
+.content-box {
+
+    display: flex;
+    justify-content: center;
+
+    align-items: center;
+    box-sizing: border-box;
+    height: 200px;
+}
+
+.text-box {
+
+    width: 80%;
+
+}
+
+/*
+img{
+    height: 114px;
+    width: 100px;
+
+}
+*/
+a {
+
+    width: 200px;
+
+    text-align: center;
+
+    font-family: 'MedievalSharp', cursive;
+    font-size: 20px;
+    color: #ffd700;
+    text-decoration: none;
+
+
+    border-radius: 8px;
+    background-color: #006080;
+
+    padding: 20px 0;
+}
+
+/* home.html */
+
+.formulario{
+
+    display: flex;
+
+
+}
+
+.formulario div{
+
+
+    font-size: 22px;
+    text-align: center;
+
+}
+
+
+
+
+/* lista-jogadores  */
+
+img {
+
+    height: 57px;
+    width: 50px;
+}
+
+
+.jogadores {
+
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+
+}
+.jogadores h1{
+
+    text-align: center;
+}
+
+.grid-box {
+
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    padding: 10px;
+
+}
+
+.grid-items{
+    background-color: #F0F8FF;
+    /* padding: 0px 150px 0px 260px; */
+    font-size: 30px;
+    text-align: center;
+}
+
+.grid-headers{
+    background-color: #F0F8FF;
+    /* padding: 0px 150px 0px 260px; */
+    font-size: 30px;
+    text-align: center;
+}
+
+.grid-items#nick {
+
+    text-align: center;
+    padding: 0 0 0 0;
+
+}
+
+.grid-items#elo {
+
+
+
+}
+.grid-items#modal {
+
+
+
+}
+
+#tier {
+
+    font-size: 0px;
+    float: left;
+    text-align: left;
+}
+
+#rank {
+
+    float: right;
+
+}
+
+#header {
+
+    padding: 0 0 0 1600px;
+
+}
+
+#btn-refresh {
+
+    padding: 0 100px 0 0;
+}

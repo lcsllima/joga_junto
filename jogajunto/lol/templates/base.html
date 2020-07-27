@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<!-- Meta Tags necessarias -->
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<!-- Bootstrap CSS -->
+		{% load static %}
+		<link rel="stylesheet" href="{% static 'lol/styles/main.css' %}" />
+		<link rel="stylesheet" href="{% static 'lol/styles/responsive.css' %}" />
+
+		<link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+		<!-- Titulo -->
+		<title>
+			{% block title %}
+				jogajunto-lol
+			{% endblock %}
+		</title>
+	</head>
+	<body>
+	  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		  <a class="navbar-brand" href="{% url 'home' %}"> Home </a>
+		  <a class="navbar-brand" href="{% url 'lista-jogadores' %}"> Lista de Jogadores </a>
+	        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	            <span class="navbar-toggler-icon"></span>
+	        </button>
+	    </ul>
+	  </div>
+	</nav>
+	{% block content %}
+
+	{% endblock %}
+	</body>
+</html>

@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<section class="content-box">
+	<div class="formulario">
+		<form name='dados' action="/external/" method="post">
+			{% csrf_token %}
+			<div>
+				Nome (Server BR1):
+				<input type="text" name="nome_invocador" required>
+				{{data_external}}
+			</div>
+			<div>
+				<label for="solo"><input type="radio" id="solo" value="solo" name="fila" required/> Solo </label>
+				<label for="flex"><input type="radio" id="flex" value="flex" name="fila"/> Flex </label>
+				<label for="clash"><input type="radio" id="clash" value="clash" name="fila"/> Clash </label>
+				<label for="casual"><input type="radio" id="casual" value="casual" name="fila"/> casual </label>
+			</div>
+			<div>
+				<input type="submit" value="Entrar na fila">
+			</div>
+		</form>
+	</div>
+</section>
+<section class="content-box">
+	<div class="text-box">
+		<h3>Como funciona?</h3>
+		<p>
+			Coloque seu nome de invocador na barra de pesquisa, clique em procurar.
+			Lá você vai ter 4 opções → Ranqueada: Solo/Duo, Ranqueada: Flexível,
+			Torneio Clash e por último Casual.
+		</p>
+	</div>
+</section>
+<section class="content-box">
+	<div class="text-box">
+		<h3> O que é? </h3>
+		<p>
+			O projeto tem como objetivo,
+			juntar quem quer jogar LoL, a qualquer hora do dia, seja Ranqueada SOLO DUO,
+			Ranqueada Flexível, O torneio do Clash ou apenas aquela partidinha Casual.
+		</p>
+	</div>
+</section>
+<section class="content-box">
+	<div class="text-box">
+		<h3>E se alguém usar meu nickname?</h3>
+		<p>
+			Não vai acontecer nada, o seu nick vai ficar na lista por 15min.
+			Como os dados são enviados pela API da Riot, você não corre NENHUM risco.
+
+			O máximo que pode acontecer é de você receber um convite de amizade,
+			mas isso pode acontecer em QUALQUER site de pesquisa do LoL, até mesmo dentro do jogo.
+			Então não se preucupe!
+		</p>
+	</div>
+</section>
+
+{% endblock %}

@@ -1,0 +1,126 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+	Lista de Jogadores
+{% endblock %}
+
+
+{% block content %}
+
+<section class="jogadores">
+	<div>
+		<div id="titulo">
+			<h1> Jogadores Disponiveis</h1>
+		</div>
+		<div id="header">
+			<div id="btn-refresh">
+				<form name="atualizar" action="atualizado/" method="post">
+					{% csrf_token %}
+					<input id='btn' name="atualizar" type="submit" value="Atualizar">
+				</form>
+			</div>
+		</div>
+		<div class="grid-box">
+			<div class="grid-headers">
+				NickName
+			</div>
+			<div class="grid-headers">
+				Tier | Rank
+			</div>
+			<div class="grid-headers">
+				Modalidade
+			</div>
+		</div>
+		<form name='dados' action="/external/" method="post">
+			    {% for jogador in jogadores %}
+					<div class="grid-box">
+				        <div class='grid-items' id="nick">
+					        {{jogador.name_view}}
+				        </div>
+						<div class='grid-items' id="elo">
+							<div id="tier">
+								<p name="tier">
+									{{jogador.tier}}
+								</p>
+							</div>
+							<div id="rank" name="rank">
+								{{jogador.rank}}
+							</div>
+						</div>
+						<div class='grid-items' id="modal">
+							{{jogador.modal}}
+						</div>
+					</div>
+				{% endfor %}
+		</form>
+	</div>
+</section>
+
+<script>
+
+
+	var tier = document.getElementsByName('tier')
+
+
+
+	for (var indice = 0; indice < tier.length; indice++){
+
+		var tierLoop = tier[indice]
+
+		var img = document.createElement('img')
+		img.setAttribute('id', 'foto')
+
+
+		if(tierLoop.innerHTML.trim() == 'GOLD'){
+			img.setAttribute('src', '{% static 'lol/assets/Emblem_Gold.png' %}')
+		}
+		else if (tierLoop.innerHTML.trim() == 'Não ranqueado') {
+			img.setAttribute('src', '{% static 'lol/assets/teemo.png' %}')
+		}
+		else if (tierLoop.innerHTML.trim() == 'IRON') {
+			img.setAttribute('src', '{% static 'lol/assets/Emblem_Iron.png' %}')
+		}
+		else if (tierLoop.innerHTML.trim() == 'BRONZE') {
+			img.setAttribute('src', '{% static 'lol/assets/Emblem_Bronze.png' %}')
+		}
+		else if (tierLoop.innerHTML.trim() == 'SILVER') {
+			img.setAttribute('src', '{% static 'lol/assets/Emblem_Silver.png' %}')
+		}
+		else if (tierLoop.innerHTML.trim() == 'PLATINUM') {
+			img.setAttribute('src', '{% static 'lol/assets/Emblem_Platinum.png' %}')
+		}
+		else if (tierLoop.innerHTML.trim() == 'DIAMOND') {
+			img.setAttribute('src', '{% static 'lol/assets/Emblem_Diamond.png' %}')
+		}
+		else if (tierLoop.innerHTML.trim() == 'MASTER') {
+			img.setAttribute('src', '{% static 'lol/assets/Emblem_Master.png' %}')
+		}
+		else if (tierLoop.innerHTML.trim() == 'GRANDMASTER') {
+			img.setAttribute('src', '{% static 'lol/assets/Emblem_Grandmaster.png' %}')
+		}
+		else if (tierLoop.innerHTML.trim() == 'CHALLENGER') {
+			img.setAttribute('src', '{% static 'lol/assets/Emblem_Challenger.png' %}')
+		}
+
+
+
+
+
+		console.log(tierLoop)
+		console.log(tierLoop.innerHTML.trim())
+
+		tierLoop.appendChild(img)
+	}
+
+
+
+
+
+
+
+
+
+
+</script>
+{% endblock %}
