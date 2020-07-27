@@ -4,4 +4,4 @@ que usam da API da Riot Games.
 
 
 
-<img src="list-jog" alt="imagem do site">
+<img src="list-jog.png" alt="imagem do site">
