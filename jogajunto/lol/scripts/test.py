@@ -2,7 +2,7 @@ import sys
 import requests
 import sqlite3
 
-
+# usei esse código para testar as coisas, então sinta se a vontade em ignorar.
 # api_key = os.getenv('API_KEY')
 # api_key = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
 
