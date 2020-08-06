@@ -8,7 +8,7 @@ através do cliente do jogo (usando o nickname).
 
 Contém duas páginas para o usuário:
 - Home
-  Possui 1 campo de texto onde o usuário insére seu nickname e 4 campos para uma seleção unica, 
+  Possui 1 campo de texto onde o usuário insere seu nickname e 4 campos para uma seleção unica, 
   que são 4 "filas": Clash, Normal, Ranqueada Solo/Duo, Ranqueada Flex.
   Então é só clicar em "Entrar na fila".
   
