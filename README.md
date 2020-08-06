@@ -20,5 +20,24 @@ O site possui responsividade(articulação dos elementos) para telas menores, co
 
 Os scripts de Python, são direcionados com um "path" do meu armazenamento, como não está em um host online, não mudei isso ainda.
 
+Tecnologias:
+
+- Python
+  os, dotenv, sqlite3, requests, urllibs, datetime
+  joga_junto/jogajunto/lol/scripts
+  o código "test.py" não faz parte do funcionamento da aplicação.
+
+- HTML/JavaScript
+  joga_junto/jogajunto/lol/templates
+
+- CSS
+  joga_junto/jogajunto/lol/static/lol/styles
+
+- API Riotgames (LoL)
+
+
 ![Imagem](https://github.com/lcsllima/joga_junto/blob/master/list-jog.PNG)
 
+
+Nota: Acredito que dê para melhorar o projeto em vários sentidos, principalmente em questão de como tratei os scripts Python,
+contudo, como meu objetivo(totalmente didático) aqui foi completo, por hora, não tenho intenções de dar continuidade.
