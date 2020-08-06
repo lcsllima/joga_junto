@@ -4,7 +4,7 @@ import sqlite3
 
 
 # api_key = os.getenv('API_KEY')
-api_key = "RGAPI-dba181f8-1cf5-4993-bb40-c83efc85bfaa"
+# api_key = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
 
 def pesquisar_nick(nick, fila, api_key):
 
